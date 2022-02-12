@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma load PQK</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./app.js"> </script>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="nav-menu">
+          <ul>
+            <li><a href="#!">Home</a></li>
+            <li><a href="#!">Product</a></li>
+            <li><a href="#!">Pricing</a></li>
+            <li><a href="#!">About</a></li>
+            <li><a href="#!">Contact</a></li>
+          </ul><span class="nav-menu__close"></span>
+        </div>
+        <div class="nav-logo"><span>Figma load</span></div>
+        <div class="nav-social"><a href="#!">
+            <svg class="nav-social__svg" width="34" height="28" viewbox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M33.6845 3.68535C32.4597 4.2137 31.1269 4.59394 29.754 4.74204C31.1793 3.89523 32.2467 2.55742 32.7559 0.979599C31.4184 1.77527 29.9531 2.33321 28.4251 2.62867C27.7865 1.94593 27.0141 1.40203 26.156 1.03086C25.298 0.659692 24.3727 0.469204 23.4379 0.471269C19.6554 0.471269 16.6134 3.53726 16.6134 7.2997C16.6134 7.82804 16.6775 8.35639 16.7815 8.86472C11.1179 8.56852 6.0666 5.86277 2.70842 1.72008C2.09652 2.76522 1.77587 3.95523 1.77981 5.16632C1.77981 7.53585 2.9846 9.62521 4.82179 10.854C3.7391 10.8114 2.68177 10.5138 1.73579 9.98544V10.0695C1.73579 13.3876 4.08131 16.1374 7.20734 16.7698C6.62039 16.9223 6.01659 17.0003 5.41017 17.002C4.96588 17.002 4.54561 16.958 4.12133 16.8979C4.98589 19.6037 7.50353 21.569 10.5015 21.633C8.15595 23.4702 5.21805 24.5509 2.02798 24.5509C1.4556 24.5509 0.927262 24.5309 0.378906 24.4668C3.40487 26.4081 6.9952 27.5288 10.8617 27.5288C23.4139 27.5288 30.2823 17.1301 30.2823 8.10422C30.2823 7.80803 30.2823 7.51184 30.2623 7.21565C31.5912 6.24301 32.7559 5.03823 33.6845 3.68535Z"></path>
+            </svg></a><a href="#!">
+            <svg class="nav-social__svg" width="33" height="34" viewbox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M30.7517 0.989624H1.29255C0.58409 0.989624 0.0117188 1.562 0.0117188 2.27046V31.7296C0.0117188 32.438 0.58409 33.0104 1.29255 33.0104H30.7517C31.4601 33.0104 32.0325 32.438 32.0325 31.7296V2.27046C32.0325 1.562 31.4601 0.989624 30.7517 0.989624ZM27.0533 10.3357H24.4956C22.4903 10.3357 22.1021 11.2883 22.1021 12.6892V15.7752H26.8892L26.2648 20.6064H22.1021V33.0104H17.1108V20.6104H12.9361V15.7752H17.1108V12.2129C17.1108 8.07822 19.6365 5.82476 23.3268 5.82476C25.096 5.82476 26.613 5.95685 27.0573 6.01689V10.3357H27.0533Z"></path>
+            </svg></a><a href="#!">
+            <svg class="nav-social__svg" width="34" height="34" viewbox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M31.736 0.989624H2.27692C1.56847 0.989624 0.996094 1.562 0.996094 2.27046V31.7296C0.996094 32.438 1.56847 33.0104 2.27692 33.0104H31.736C32.4445 33.0104 33.0169 32.438 33.0169 31.7296V2.27046C33.0169 1.562 32.4445 0.989624 31.736 0.989624ZM10.4943 28.2753H5.74317V12.9934H10.4943V28.2753ZM8.12072 10.9041C7.57607 10.9041 7.04365 10.7425 6.59079 10.44C6.13794 10.1374 5.78498 9.70729 5.57655 9.2041C5.36812 8.70091 5.31359 8.14722 5.41984 7.61303C5.5261 7.07885 5.78837 6.58817 6.1735 6.20305C6.55862 5.81792 7.0493 5.55565 7.58348 5.4494C8.11766 5.34314 8.67136 5.39768 9.17455 5.6061C9.67773 5.81453 10.1078 6.16749 10.4104 6.62035C10.713 7.07321 10.8745 7.60562 10.8745 8.15027C10.8705 9.67126 9.6377 10.9041 8.12072 10.9041ZM28.2818 28.2753H23.5347V20.8425C23.5347 19.0694 23.5027 16.7919 21.0651 16.7919C18.5955 16.7919 18.2153 18.7211 18.2153 20.7144V28.2753H13.4722V12.9934H18.0271V15.0828H18.0912C18.7236 13.882 20.2726 12.6132 22.5861 12.6132C27.3972 12.6132 28.2818 15.7792 28.2818 19.8939V28.2753Z"></path>
+            </svg></a></div>
+      </div>
+      <div class="headContent">
+        <h1 class="headContent-title">The best products start with Figma</h1><span class="headContent-subtile">Most calendars are designed for teams. Slate is designed for freelancers</span>
+        <div class="btn btn-center"> <a href="#!">Try For Free</a></div>
+      </div>
+    </header>
+    <main>
+      <div class="features">
+        <h3 class="features-title">Features</h3><span class="features-subtitle">Most calendars are designed for teams. Slate is designed for freelancers</span>
+        <div class="features-grid">
+          <div class="features-item"> 
+            <svg class="features-item__icon" viewbox="0 0 47 47" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.6042 0.625C18.3117 0.625 21.8673 2.0978 24.4889 4.7194C27.1105 7.34101 28.5833 10.8967 28.5833 14.6042C28.5833 17.9846 27.3888 21.0854 25.3808 23.5H46.375V46.375H23.5V25.3808C21.0854 27.3888 17.9846 28.5833 14.6042 28.5833C10.8967 28.5833 7.34101 27.1105 4.7194 24.4889C2.0978 21.8673 0.625 18.3117 0.625 14.6042C0.625 10.8967 2.0978 7.34101 4.7194 4.7194C7.34101 2.0978 10.8967 0.625 14.6042 0.625V0.625Z"></path>
+            </svg><span class="features-item__title">OpenType features Variable fonts</span>
+            <p class="features-item__text">Slate helps you see how many more days you need to work to reach your financial goal.</p>
+          </div>
+          <div class="features-item"> 
+            <svg class="features-item__icon" viewbox="0 0 45 42" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.2486 41.65C22.402 40.0167 21.492 35.5134 19.392 32.6667C17.3153 29.75 14.4453 27.7434 11.552 25.8067C9.48756 24.5055 7.64432 22.8829 6.09197 21C5.43863 20.23 4.10863 18.8067 5.46197 18.5267C6.83863 18.2467 9.21863 19.6 10.432 20.1134C12.5553 21 14.6553 22.0267 16.6153 23.24L18.972 19.2734C15.332 16.87 10.6653 14.7467 6.3253 14.1167C3.85197 13.7434 1.23863 14.2567 0.398634 16.94C-0.348033 19.25 0.841967 21.5834 2.1953 23.4034C5.39197 27.6734 10.362 29.7267 14.072 33.4134C14.8653 34.1834 15.822 35.0934 16.2886 36.1667C16.7786 37.1934 16.662 37.2634 15.5653 37.2634C12.672 37.2634 9.0553 35 6.69863 33.5067L4.34197 37.4734C7.91197 39.6667 13.8853 43.0967 18.2486 41.65V41.65ZM44.1253 5.25004C44.6386 4.7367 44.6386 3.8967 44.1253 3.4067L41.092 0.373369C40.8476 0.137831 40.5214 0.00622559 40.182 0.00622559C39.8426 0.00622559 39.5164 0.137831 39.272 0.373369L36.892 2.75337L41.7453 7.6067L44.1253 5.25004ZM21.1653 18.48V23.3334H26.0186L40.3686 8.98337L35.5153 4.13004L21.1653 18.48Z"></path>
+            </svg><span class="features-item__title">Design with real data</span>
+            <p class="features-item__text">Slate helps you see how many more days you need to work to reach your financial goal.</p>
+          </div>
+          <div class="features-item"> 
+            <svg class="features-item__icon" viewbox="0 0 49 47" xmlns="http://www.w3.org/2000/svg">
+              <path d="M47.6366 4.76792L44.2308 1.36209C43.2904 0.37084 41.6383 0.37084 40.647 1.36209L17.8737 24.1354L24.8633 31.125L47.6366 8.35167C48.6279 7.36042 48.6279 5.70834 47.6366 4.76792V4.76792ZM12.7904 28.5833C10.7681 28.5833 8.82864 29.3867 7.39868 30.8166C5.96871 32.2466 5.16536 34.1861 5.16536 36.2083C5.16536 39.5379 2.21703 41.2917 0.0820312 41.2917C2.42036 44.3925 6.4362 46.375 10.2487 46.375C12.9451 46.375 15.531 45.3039 17.4376 43.3973C19.3442 41.4906 20.4154 38.9047 20.4154 36.2083C20.4154 34.1861 19.612 32.2466 18.1821 30.8166C16.7521 29.3867 14.8126 28.5833 12.7904 28.5833Z"></path>
+            </svg><span class="features-item__title">Fastest way to take action</span>
+            <p class="features-item__text">Slate helps you see how many more days you need to work to reach your financial goal.</p>
+          </div>
+        </div>
+        <div class="features-video">
+          <div class="features-video__screen"><iframe src="https://www.youtube.com/embed/aGL0jlm47KY?1080HD&rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0"></iframe></div>
+          <svg class="features-video__playico" width="188" height="188" viewbox="0 0 188 188" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="93.8274" cy="94.0001" r="93.6985"></circle>
+            <path d="M79.4023 71.594L118.443 95.0186L79.4023 118.443V71.594Z"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="heros">
+        <div class="heros-content"> 
+          <h3>Fastest way to organize</h3>
+          <p>Most calendars are designed for teams. Slate is designed for freelancers</p>
+          <div class="btn"><a href="#!">Try For Free</a></div>
+        </div>
+        <div class="heros-image"><img class="heros-image__main" src="https://images.unsplash.com/photo-1611241893603-3c359704e0ee?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1170&amp;q=80" alt="hero-img"><span class="heros-image__decol"></span></div>
+      </div>
+      <div class="light">
+        <div class="light-image"><img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1169&amp;q=80" alt="light"></div>
+        <div class="light-text"><span>At your fingertips</span>
+          <h3>Lightning fast prototyping </h3>
+        </div>
+        <div class="light-input"><span>Subscribe to our Newsletter</span>
+          <p>Available exclusivery on Figmaland</p>
+          <form class="light-input__form" action="" method="post">
+            <input type="email" name="" placeholder="Your Email">
+            <input class="btn" type="button" value="Subscribe">
+          </form>
+        </div>
+      </div>
+      <div class="partner">
+        <h3>Partners</h3>
+        <p>Most calendars are designed for teams. Slate is designed for freelancers</p>
+        <div class="partner-grip">
+          <div class="partner-item"><span>Google</span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png" alt="par"/></div>
+          <div class="partner-item"><span>Facebook</span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" alt="par"/></div>
+          <div class="partner-item"><span>Discord</span><img src="https://static.miraheze.org/hololivewiki/9/9d/Logo_-_Discord_%28Textless%29.png" alt="par"/></div>
+          <div class="partner-item"><span>Twitter</span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" alt="par"/></div>
+          <div class="partner-item"><span>Microsoft</span><img src="https://developer.microsoft.com/tr-tr/media/windows.png" alt="par"/></div>
+          <div class="partner-item"><span>Figma</span><img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="par"/></div>
+        </div>
+        <div class="btn">Try For Free</div>
+      </div>
+      <div class="testimonial">
+        <h3>Testimonials</h3><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="test">
+        <p>Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</p>
+        <div class="testimonial-dev"> <img class="testimonial-dev__avt" src="https://scontent.fdad1-1.fna.fbcdn.net/v/t39.30808-6/270637914_1564897377197266_5691593292151767693_n.jpg?_nc_cat=100&amp;ccb=1-5&amp;_nc_sid=09cbfe&amp;_nc_ohc=PA0dTTIy4T0AX9OuNM9&amp;tn=p3ct1bAv8DTv4qI8&amp;_nc_ht=scontent.fdad1-1.fna&amp;oh=00_AT8KJd7RhlYe7iKWmZiUK0yEAMMJ1KqxTvm5xSRHVtHDUg&amp;oe=61DA0289" alt="avt">
+          <div class="testimonial-dev__text"><span>Pham Quoc Khanh</span>
+            <p>UI Designer</p>
+          </div>
+        </div>
+        <div class="btn">More Testimonials</div>
+      </div>
+      <div class="pricing">
+        <h3>Pricing</h3>
+        <p>Most calendars are designed for teams. Slate is designed for freelancers</p>
+        <div class="pricing-grip">
+          <div class="pricing-item"><span class="pricing-item__name">FREE</span><span class="pricing-item__subname">Organize across all apps by hand</span>
+            <div class="pricing-item__coin"><span class="coin-main">0</span>
+              <div class="coin-sub"> <span>$</span>
+                <p>Per Month</p>
+              </div>
+            </div>
+            <ul class="pricing-item__content">
+              <li>Pricing Feature</li>
+              <li>Pricing Feature</li>
+              <li>Pricing Feature</li>
+              <li>Pricing Feature</li>
+              <li>Pricing Feature</li>
+            </ul>
+            <div class="btn">Order Now</div>
+          </div>
+          <div class="pricing-item pricing-center"><span class="pricing-item__name">STANDARD</span><span class="pricing-item__subname">Organize across all apps by hand</span>
+            <div class="pricing-item__coin"><span class="coin-main">10</span>
+              <div class="coin-sub"> <span>$</span>
+                <p>Per Month</p>
+              </div>
+            </div>
+            <ul class="pricing-item__content">
+              <li>Pricing Feature</li>
+              <li>Pricing Feature</li>
+              <li>Pricing Feature</li>
+              <li>Pricing Feature</li>
+              <li>Pricing Feature</li>
+            </ul>
+            <div class="btn btn-pricing">Order Now</div>
+          </div>
+          <div class="pricing-item"><span class="pricing-item__name">BUSINESS</span><span class="pricing-item__subname">Organize across all apps by hand</span>
+            <div class="pricing-item__coin"><span class="coin-main">99</span>
+              <div class="coin-sub"> <span>$</span>
+                <p>Per Month</p>
+              </div>
+            </div>
+            <ul class="pricing-item__content">
+              <li>Pricing Feature</li>
+              <li>Pricing Feature</li>
+              <li>Pricing Feature</li>
+              <li>Pricing Feature</li>
+              <li>Pricing Feature</li>
+            </ul>
+            <div class="btn">Order Now</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact">
+        <h3 class="contact-title">Contact Us</h3>
+        <p class="contact-subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
+        <div class="contact-main"> 
+          <form class="contact-form" action="" method="post"> <span>Contact Us</span>
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Emal">
+            <textarea name="massage" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input class="btn btn-con" type="button" value="Send">
+          </form>
+          <div class="contact-info"> 
+            <div class="contact-info__main">
+              <div class="contact-info__item">
+                <svg viewbox="0 0 26 33" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.5013 19.884C16.9941 19.884 19.8346 17.0435 19.8346 13.5506C19.8346 10.0578 16.9941 7.21729 13.5013 7.21729C10.0085 7.21729 7.16797 10.0578 7.16797 13.5506C7.16797 17.0435 10.0085 19.884 13.5013 19.884ZM13.5013 10.384C15.2477 10.384 16.668 11.8042 16.668 13.5506C16.668 15.297 15.2477 16.7173 13.5013 16.7173C11.7549 16.7173 10.3346 15.297 10.3346 13.5506C10.3346 11.8042 11.7549 10.384 13.5013 10.384Z"></path>
+                  <path d="M12.2485 32.256C12.5164 32.4473 12.8375 32.5502 13.1668 32.5502C13.4961 32.5502 13.8172 32.4473 14.0851 32.256C14.5665 31.9155 25.8794 23.7471 25.8335 13.5505C25.8335 6.56637 20.1509 0.883789 13.1668 0.883789C6.18272 0.883789 0.500139 6.56637 0.500139 13.5425C0.454223 23.7471 11.7671 31.9155 12.2485 32.256ZM13.1668 4.05046C18.4061 4.05046 22.6668 8.31121 22.6668 13.5584C22.7001 20.5852 15.7191 26.8948 13.1668 28.9642C10.6161 26.8932 3.63356 20.582 3.66681 13.5505C3.66681 8.31121 7.92756 4.05046 13.1668 4.05046Z"></path>
+                </svg>
+                <p>2A, Dien Nam Bac, Dien Ban, Quang Nam</p>
+              </div>
+              <div class="contact-info__item">
+                <svg viewbox="0 0 21 33" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.5417 0.175781H4.875C2.45417 0.175781 0.5 2.12995 0.5 4.55078V27.8841C0.5 30.3049 2.45417 32.2591 4.875 32.2591H16.5417C18.9625 32.2591 20.9167 30.3049 20.9167 27.8841V4.55078C20.9167 2.12995 18.9625 0.175781 16.5417 0.175781ZM13.625 29.3424H7.79167V27.8841H13.625V29.3424ZM18.3646 24.9674H3.05208V4.55078H18.3646V24.9674Z"></path>
+                </svg>
+                <p>0765932203</p>
+              </div>
+              <div class="contact-info__item">
+                <svg viewbox="0 0 27 22" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M25.3125 0.904785H0.9375C0.418945 0.904785 0 1.32373 0 1.84229V20.5923C0 21.1108 0.418945 21.5298 0.9375 21.5298H25.3125C25.8311 21.5298 26.25 21.1108 26.25 20.5923V1.84229C26.25 1.32373 25.8311 0.904785 25.3125 0.904785ZM24.1406 4.15088V19.4204H2.10938V4.15088L1.30078 3.521L2.45215 2.0415L3.70605 3.01709H22.5469L23.8008 2.0415L24.9521 3.521L24.1406 4.15088ZM22.5469 3.01416L13.125 10.3384L3.70312 3.01416L2.44922 2.03857L1.29785 3.51807L2.10645 4.14795L12.1143 11.9292C12.4021 12.1528 12.7561 12.2742 13.1206 12.2742C13.4851 12.2742 13.8391 12.1528 14.127 11.9292L24.1406 4.15088L24.9492 3.521L23.7979 2.0415L22.5469 3.01416Z"></path>
+                </svg>
+                <p>khanhkun292@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-info__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d567.6478053125898!2d108.2580308364505!3d15.925037567093284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142101fdf5f5acf%3A0xc1c153ee23020ae0!2zVsaw4budbiBNYWkgQmEgTMOgbw!5e1!3m2!1svi!2s!4v1641441128244!5m2!1svi!2s" allowfullscreen="" loading="lazy"></iframe></div>
+            <div class="nav-social"><a href="#!">
+                <svg class="nav-social__svg contact-info__social" width="34" height="28" viewbox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M33.6845 3.68535C32.4597 4.2137 31.1269 4.59394 29.754 4.74204C31.1793 3.89523 32.2467 2.55742 32.7559 0.979599C31.4184 1.77527 29.9531 2.33321 28.4251 2.62867C27.7865 1.94593 27.0141 1.40203 26.156 1.03086C25.298 0.659692 24.3727 0.469204 23.4379 0.471269C19.6554 0.471269 16.6134 3.53726 16.6134 7.2997C16.6134 7.82804 16.6775 8.35639 16.7815 8.86472C11.1179 8.56852 6.0666 5.86277 2.70842 1.72008C2.09652 2.76522 1.77587 3.95523 1.77981 5.16632C1.77981 7.53585 2.9846 9.62521 4.82179 10.854C3.7391 10.8114 2.68177 10.5138 1.73579 9.98544V10.0695C1.73579 13.3876 4.08131 16.1374 7.20734 16.7698C6.62039 16.9223 6.01659 17.0003 5.41017 17.002C4.96588 17.002 4.54561 16.958 4.12133 16.8979C4.98589 19.6037 7.50353 21.569 10.5015 21.633C8.15595 23.4702 5.21805 24.5509 2.02798 24.5509C1.4556 24.5509 0.927262 24.5309 0.378906 24.4668C3.40487 26.4081 6.9952 27.5288 10.8617 27.5288C23.4139 27.5288 30.2823 17.1301 30.2823 8.10422C30.2823 7.80803 30.2823 7.51184 30.2623 7.21565C31.5912 6.24301 32.7559 5.03823 33.6845 3.68535Z"></path>
+                </svg></a><a href="#!">
+                <svg class="nav-social__svg contact-info__social" width="33" height="34" viewbox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M30.7517 0.989624H1.29255C0.58409 0.989624 0.0117188 1.562 0.0117188 2.27046V31.7296C0.0117188 32.438 0.58409 33.0104 1.29255 33.0104H30.7517C31.4601 33.0104 32.0325 32.438 32.0325 31.7296V2.27046C32.0325 1.562 31.4601 0.989624 30.7517 0.989624ZM27.0533 10.3357H24.4956C22.4903 10.3357 22.1021 11.2883 22.1021 12.6892V15.7752H26.8892L26.2648 20.6064H22.1021V33.0104H17.1108V20.6104H12.9361V15.7752H17.1108V12.2129C17.1108 8.07822 19.6365 5.82476 23.3268 5.82476C25.096 5.82476 26.613 5.95685 27.0573 6.01689V10.3357H27.0533Z"></path>
+                </svg></a><a href="#!">
+                <svg class="nav-social__svg contact-info__social" width="34" height="34" viewbox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M31.736 0.989624H2.27692C1.56847 0.989624 0.996094 1.562 0.996094 2.27046V31.7296C0.996094 32.438 1.56847 33.0104 2.27692 33.0104H31.736C32.4445 33.0104 33.0169 32.438 33.0169 31.7296V2.27046C33.0169 1.562 32.4445 0.989624 31.736 0.989624ZM10.4943 28.2753H5.74317V12.9934H10.4943V28.2753ZM8.12072 10.9041C7.57607 10.9041 7.04365 10.7425 6.59079 10.44C6.13794 10.1374 5.78498 9.70729 5.57655 9.2041C5.36812 8.70091 5.31359 8.14722 5.41984 7.61303C5.5261 7.07885 5.78837 6.58817 6.1735 6.20305C6.55862 5.81792 7.0493 5.55565 7.58348 5.4494C8.11766 5.34314 8.67136 5.39768 9.17455 5.6061C9.67773 5.81453 10.1078 6.16749 10.4104 6.62035C10.713 7.07321 10.8745 7.60562 10.8745 8.15027C10.8705 9.67126 9.6377 10.9041 8.12072 10.9041ZM28.2818 28.2753H23.5347V20.8425C23.5347 19.0694 23.5027 16.7919 21.0651 16.7919C18.5955 16.7919 18.2153 18.7211 18.2153 20.7144V28.2753H13.4722V12.9934H18.0271V15.0828H18.0912C18.7236 13.882 20.2726 12.6132 22.5861 12.6132C27.3972 12.6132 28.2818 15.7792 28.2818 19.8939V28.2753Z"></path>
+                </svg></a></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer> 
+      <div class="footer">
+        <div class="footer-list"> <span>Pages</span>
+          <ul>
+            <li><a href="#!">Home</a></li>
+            <li><a href="#!">Product</a></li>
+            <li><a href="#!">Pricing</a></li>
+            <li><a href="#!">About</a></li>
+            <li><a href="#!">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-list"> <span>Tomothy</span>
+          <ul>
+            <li><a href="#!">Eleanor Edwards</a></li>
+            <li><a href="#!">Ted Robertson</a></li>
+            <li><a href="#!">Annette Russell</a></li>
+            <li><a href="#!">Jennie Mckinney</a></li>
+            <li><a href="#!">Gloria Richards</a></li>
+          </ul>
+        </div>
+        <div class="footer-list"> <span>Jane Black</span>
+          <ul>
+            <li><a href="#!">Philip Jones</a></li>
+            <li><a href="#!">Product</a></li>
+            <li><a href="#!">Colleen Russell</a></li>
+            <li><a href="#!">Marvin Hawkins</a></li>
+            <li><a href="#!">Bruce Simmmons</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-info">
+        <div class="footer-info__up"> 
+          <svg viewbox="0 0 26 33" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.5013 19.884C16.9941 19.884 19.8346 17.0435 19.8346 13.5506C19.8346 10.0578 16.9941 7.21729 13.5013 7.21729C10.0085 7.21729 7.16797 10.0578 7.16797 13.5506C7.16797 17.0435 10.0085 19.884 13.5013 19.884ZM13.5013 10.384C15.2477 10.384 16.668 11.8042 16.668 13.5506C16.668 15.297 15.2477 16.7173 13.5013 16.7173C11.7549 16.7173 10.3346 15.297 10.3346 13.5506C10.3346 11.8042 11.7549 10.384 13.5013 10.384Z"></path>
+            <path d="M12.2485 32.256C12.5164 32.4473 12.8375 32.5502 13.1668 32.5502C13.4961 32.5502 13.8172 32.4473 14.0851 32.256C14.5665 31.9155 25.8794 23.7471 25.8335 13.5505C25.8335 6.56637 20.1509 0.883789 13.1668 0.883789C6.18272 0.883789 0.500139 6.56637 0.500139 13.5425C0.454223 23.7471 11.7671 31.9155 12.2485 32.256ZM13.1668 4.05046C18.4061 4.05046 22.6668 8.31121 22.6668 13.5584C22.7001 20.5852 15.7191 26.8948 13.1668 28.9642C10.6161 26.8932 3.63356 20.582 3.66681 13.5505C3.66681 8.31121 7.92756 4.05046 13.1668 4.05046Z"></path>
+          </svg>
+          <p>2A, Dien Nam Bac, Dien Ban, Quang Nam</p>
+        </div>
+        <div class="footer-info__up"> 
+          <svg viewbox="0 0 21 33" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.5417 0.175781H4.875C2.45417 0.175781 0.5 2.12995 0.5 4.55078V27.8841C0.5 30.3049 2.45417 32.2591 4.875 32.2591H16.5417C18.9625 32.2591 20.9167 30.3049 20.9167 27.8841V4.55078C20.9167 2.12995 18.9625 0.175781 16.5417 0.175781ZM13.625 29.3424H7.79167V27.8841H13.625V29.3424ZM18.3646 24.9674H3.05208V4.55078H18.3646V24.9674Z"></path>
+          </svg>
+          <p>0765932203</p>
+        </div>
+        <div class="footer-info__down">
+          <div class="nav-social"><a href="#!">
+              <svg class="nav-social__svg" width="34" height="28" viewbox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33.6845 3.68535C32.4597 4.2137 31.1269 4.59394 29.754 4.74204C31.1793 3.89523 32.2467 2.55742 32.7559 0.979599C31.4184 1.77527 29.9531 2.33321 28.4251 2.62867C27.7865 1.94593 27.0141 1.40203 26.156 1.03086C25.298 0.659692 24.3727 0.469204 23.4379 0.471269C19.6554 0.471269 16.6134 3.53726 16.6134 7.2997C16.6134 7.82804 16.6775 8.35639 16.7815 8.86472C11.1179 8.56852 6.0666 5.86277 2.70842 1.72008C2.09652 2.76522 1.77587 3.95523 1.77981 5.16632C1.77981 7.53585 2.9846 9.62521 4.82179 10.854C3.7391 10.8114 2.68177 10.5138 1.73579 9.98544V10.0695C1.73579 13.3876 4.08131 16.1374 7.20734 16.7698C6.62039 16.9223 6.01659 17.0003 5.41017 17.002C4.96588 17.002 4.54561 16.958 4.12133 16.8979C4.98589 19.6037 7.50353 21.569 10.5015 21.633C8.15595 23.4702 5.21805 24.5509 2.02798 24.5509C1.4556 24.5509 0.927262 24.5309 0.378906 24.4668C3.40487 26.4081 6.9952 27.5288 10.8617 27.5288C23.4139 27.5288 30.2823 17.1301 30.2823 8.10422C30.2823 7.80803 30.2823 7.51184 30.2623 7.21565C31.5912 6.24301 32.7559 5.03823 33.6845 3.68535Z"></path>
+              </svg></a><a href="#!">
+              <svg class="nav-social__svg" width="33" height="34" viewbox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30.7517 0.989624H1.29255C0.58409 0.989624 0.0117188 1.562 0.0117188 2.27046V31.7296C0.0117188 32.438 0.58409 33.0104 1.29255 33.0104H30.7517C31.4601 33.0104 32.0325 32.438 32.0325 31.7296V2.27046C32.0325 1.562 31.4601 0.989624 30.7517 0.989624ZM27.0533 10.3357H24.4956C22.4903 10.3357 22.1021 11.2883 22.1021 12.6892V15.7752H26.8892L26.2648 20.6064H22.1021V33.0104H17.1108V20.6104H12.9361V15.7752H17.1108V12.2129C17.1108 8.07822 19.6365 5.82476 23.3268 5.82476C25.096 5.82476 26.613 5.95685 27.0573 6.01689V10.3357H27.0533Z"></path>
+              </svg></a><a href="#!">
+              <svg class="nav-social__svg" width="34" height="34" viewbox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M31.736 0.989624H2.27692C1.56847 0.989624 0.996094 1.562 0.996094 2.27046V31.7296C0.996094 32.438 1.56847 33.0104 2.27692 33.0104H31.736C32.4445 33.0104 33.0169 32.438 33.0169 31.7296V2.27046C33.0169 1.562 32.4445 0.989624 31.736 0.989624ZM10.4943 28.2753H5.74317V12.9934H10.4943V28.2753ZM8.12072 10.9041C7.57607 10.9041 7.04365 10.7425 6.59079 10.44C6.13794 10.1374 5.78498 9.70729 5.57655 9.2041C5.36812 8.70091 5.31359 8.14722 5.41984 7.61303C5.5261 7.07885 5.78837 6.58817 6.1735 6.20305C6.55862 5.81792 7.0493 5.55565 7.58348 5.4494C8.11766 5.34314 8.67136 5.39768 9.17455 5.6061C9.67773 5.81453 10.1078 6.16749 10.4104 6.62035C10.713 7.07321 10.8745 7.60562 10.8745 8.15027C10.8705 9.67126 9.6377 10.9041 8.12072 10.9041ZM28.2818 28.2753H23.5347V20.8425C23.5347 19.0694 23.5027 16.7919 21.0651 16.7919C18.5955 16.7919 18.2153 18.7211 18.2153 20.7144V28.2753H13.4722V12.9934H18.0271V15.0828H18.0912C18.7236 13.882 20.2726 12.6132 22.5861 12.6132C27.3972 12.6132 28.2818 15.7792 28.2818 19.8939V28.2753Z"></path>
+              </svg></a></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

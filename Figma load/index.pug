@@ -1,0 +1,210 @@
+include mixins
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Figma load PQK
+    link(rel="stylesheet", href="./css/style.css")
+    script(src="./app.js") 
+  body
+    header
+      .nav
+        .nav-menu
+          ul
+            li
+              a(href="#!") Home
+            li
+              a(href="#!") Product
+            li
+              a(href="#!") Pricing
+            li
+              a(href="#!") About
+            li
+              a(href="#!") Contact
+          span.nav-menu__close
+        .nav-logo
+          span Figma load
+        +navSocial.nav-mobile
+      .headContent
+        h1.headContent-title The best products start with Figma
+        span.headContent-subtile Most calendars are designed for teams. Slate is designed for freelancers
+        .btn.btn-center 
+          a(href="#!") Try For Free
+    main
+      .features
+        h3.features-title Features
+        span.features-subtitle Most calendars are designed for teams. Slate is designed for freelancers
+        .features-grid
+          .features-item 
+            svg.features-item__icon(viewbox='0 0 47 47' xmlns='http://www.w3.org/2000/svg')
+                path(d='M14.6042 0.625C18.3117 0.625 21.8673 2.0978 24.4889 4.7194C27.1105 7.34101 28.5833 10.8967 28.5833 14.6042C28.5833 17.9846 27.3888 21.0854 25.3808 23.5H46.375V46.375H23.5V25.3808C21.0854 27.3888 17.9846 28.5833 14.6042 28.5833C10.8967 28.5833 7.34101 27.1105 4.7194 24.4889C2.0978 21.8673 0.625 18.3117 0.625 14.6042C0.625 10.8967 2.0978 7.34101 4.7194 4.7194C7.34101 2.0978 10.8967 0.625 14.6042 0.625V0.625Z')
+            span.features-item__title OpenType features Variable fonts
+            p.features-item__text Slate helps you see how many more days you need to work to reach your financial goal.
+          .features-item 
+            svg.features-item__icon(viewbox='0 0 45 42' xmlns='http://www.w3.org/2000/svg')
+              path(d='M18.2486 41.65C22.402 40.0167 21.492 35.5134 19.392 32.6667C17.3153 29.75 14.4453 27.7434 11.552 25.8067C9.48756 24.5055 7.64432 22.8829 6.09197 21C5.43863 20.23 4.10863 18.8067 5.46197 18.5267C6.83863 18.2467 9.21863 19.6 10.432 20.1134C12.5553 21 14.6553 22.0267 16.6153 23.24L18.972 19.2734C15.332 16.87 10.6653 14.7467 6.3253 14.1167C3.85197 13.7434 1.23863 14.2567 0.398634 16.94C-0.348033 19.25 0.841967 21.5834 2.1953 23.4034C5.39197 27.6734 10.362 29.7267 14.072 33.4134C14.8653 34.1834 15.822 35.0934 16.2886 36.1667C16.7786 37.1934 16.662 37.2634 15.5653 37.2634C12.672 37.2634 9.0553 35 6.69863 33.5067L4.34197 37.4734C7.91197 39.6667 13.8853 43.0967 18.2486 41.65V41.65ZM44.1253 5.25004C44.6386 4.7367 44.6386 3.8967 44.1253 3.4067L41.092 0.373369C40.8476 0.137831 40.5214 0.00622559 40.182 0.00622559C39.8426 0.00622559 39.5164 0.137831 39.272 0.373369L36.892 2.75337L41.7453 7.6067L44.1253 5.25004ZM21.1653 18.48V23.3334H26.0186L40.3686 8.98337L35.5153 4.13004L21.1653 18.48Z')
+            span.features-item__title Design with real data
+            p.features-item__text Slate helps you see how many more days you need to work to reach your financial goal.
+          .features-item 
+            svg.features-item__icon(viewbox='0 0 49 47' xmlns='http://www.w3.org/2000/svg')
+              path(d='M47.6366 4.76792L44.2308 1.36209C43.2904 0.37084 41.6383 0.37084 40.647 1.36209L17.8737 24.1354L24.8633 31.125L47.6366 8.35167C48.6279 7.36042 48.6279 5.70834 47.6366 4.76792V4.76792ZM12.7904 28.5833C10.7681 28.5833 8.82864 29.3867 7.39868 30.8166C5.96871 32.2466 5.16536 34.1861 5.16536 36.2083C5.16536 39.5379 2.21703 41.2917 0.0820312 41.2917C2.42036 44.3925 6.4362 46.375 10.2487 46.375C12.9451 46.375 15.531 45.3039 17.4376 43.3973C19.3442 41.4906 20.4154 38.9047 20.4154 36.2083C20.4154 34.1861 19.612 32.2466 18.1821 30.8166C16.7521 29.3867 14.8126 28.5833 12.7904 28.5833Z')
+            span.features-item__title Fastest way to take action
+            p.features-item__text Slate helps you see how many more days you need to work to reach your financial goal.
+        .features-video
+          .features-video__screen
+            <iframe src="https://www.youtube.com/embed/aGL0jlm47KY?1080HD&rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0"></iframe>
+          svg.features-video__playico(width='188' height='188' viewbox='0 0 188 188' xmlns='http://www.w3.org/2000/svg')
+            circle(cx='93.8274' cy='94.0001' r='93.6985')
+            path(d='M79.4023 71.594L118.443 95.0186L79.4023 118.443V71.594Z')
+      .heros
+        .heros-content 
+          h3 Fastest way to organize
+          p Most calendars are designed for teams. Slate is designed for freelancers
+          .btn
+            a(href="#!") Try For Free
+        .heros-image
+          img.heros-image__main(src="https://images.unsplash.com/photo-1611241893603-3c359704e0ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80", alt="hero-img")
+          span.heros-image__decol
+      .light
+        .light-image
+          img(src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80", alt="light")
+        .light-text
+          span At your fingertips
+          h3 Lightning fast prototyping 
+        .light-input
+          span Subscribe to our Newsletter
+          p Available exclusivery on Figmaland
+          form(action="", method="post").light-input__form
+            input(type="email", name="", placeholder="Your Email")
+            input(type="button", value="Subscribe").btn 
+      .partner
+        h3 Partners
+        p Most calendars are designed for teams. Slate is designed for freelancers
+        .partner-grip
+          +partnerItem(
+            "Google",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png")
+          +partnerItem(
+            "Facebook",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png")
+          +partnerItem(
+            "Discord",
+          "https://static.miraheze.org/hololivewiki/9/9d/Logo_-_Discord_%28Textless%29.png")
+          +partnerItem(
+            "Twitter",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png")
+          +partnerItem(
+            "Microsoft",
+          "https://developer.microsoft.com/tr-tr/media/windows.png")
+          +partnerItem(
+            "Figma",
+          "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg")
+        .btn Try For Free
+      .testimonial
+        h3 Testimonials
+        img(src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg", alt="test")
+        p Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.
+        .testimonial-dev 
+          img.testimonial-dev__avt(src="https://scontent.fdad1-1.fna.fbcdn.net/v/t39.30808-6/270637914_1564897377197266_5691593292151767693_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=PA0dTTIy4T0AX9OuNM9&tn=p3ct1bAv8DTv4qI8&_nc_ht=scontent.fdad1-1.fna&oh=00_AT8KJd7RhlYe7iKWmZiUK0yEAMMJ1KqxTvm5xSRHVtHDUg&oe=61DA0289", alt="avt")
+          .testimonial-dev__text
+            span Pham Quoc Khanh
+            p UI Designer
+        .btn More Testimonials
+      .pricing
+        h3 Pricing
+        p Most calendars are designed for teams. Slate is designed for freelancers
+        .pricing-grip
+          +pricingItem(
+            "FREE",
+            "Organize across all apps by hand",
+            "0",
+            "Pricing Feature",
+            "Pricing Feature",
+            "Pricing Feature",
+            "Pricing Feature",
+            "Pricing Feature")
+          +pricingItem(
+            "STANDARD",
+            "Organize across all apps by hand",
+            "10",
+            "Pricing Feature",
+            "Pricing Feature",
+            "Pricing Feature",
+            "Pricing Feature",
+            "Pricing Feature",
+            "pricing-center",
+            "btn-pricing")
+          +pricingItem(
+            "BUSINESS",
+            "Organize across all apps by hand",
+            "99",
+            "Pricing Feature",
+            "Pricing Feature",
+            "Pricing Feature",
+            "Pricing Feature",
+            "Pricing Feature")
+      .contact
+        h3.contact-title Contact Us
+        p.contact-subtitle Most calendars are designed for teams. Slate is designed for freelancers
+        .contact-main 
+          form.contact-form(action="", method="post") 
+            span Contact Us
+            input(type="text", name="name",placeholder="Your Name")
+            input(type="email", name="email", placeholder="Your Emal")
+            textarea(name="massage", cols="30", rows="10", placeholder="Your Message")
+            input.btn.btn-con(type="button", value="Send")
+          .contact-info 
+            .contact-info__main
+              .contact-info__item
+                svg(viewbox='0 0 26 33' xmlns='http://www.w3.org/2000/svg')
+                  path(d='M13.5013 19.884C16.9941 19.884 19.8346 17.0435 19.8346 13.5506C19.8346 10.0578 16.9941 7.21729 13.5013 7.21729C10.0085 7.21729 7.16797 10.0578 7.16797 13.5506C7.16797 17.0435 10.0085 19.884 13.5013 19.884ZM13.5013 10.384C15.2477 10.384 16.668 11.8042 16.668 13.5506C16.668 15.297 15.2477 16.7173 13.5013 16.7173C11.7549 16.7173 10.3346 15.297 10.3346 13.5506C10.3346 11.8042 11.7549 10.384 13.5013 10.384Z')
+                  path(d='M12.2485 32.256C12.5164 32.4473 12.8375 32.5502 13.1668 32.5502C13.4961 32.5502 13.8172 32.4473 14.0851 32.256C14.5665 31.9155 25.8794 23.7471 25.8335 13.5505C25.8335 6.56637 20.1509 0.883789 13.1668 0.883789C6.18272 0.883789 0.500139 6.56637 0.500139 13.5425C0.454223 23.7471 11.7671 31.9155 12.2485 32.256ZM13.1668 4.05046C18.4061 4.05046 22.6668 8.31121 22.6668 13.5584C22.7001 20.5852 15.7191 26.8948 13.1668 28.9642C10.6161 26.8932 3.63356 20.582 3.66681 13.5505C3.66681 8.31121 7.92756 4.05046 13.1668 4.05046Z')
+                p 2A, Dien Nam Bac, Dien Ban, Quang Nam
+              .contact-info__item
+                svg(viewbox='0 0 21 33' xmlns='http://www.w3.org/2000/svg')
+                  path(d='M16.5417 0.175781H4.875C2.45417 0.175781 0.5 2.12995 0.5 4.55078V27.8841C0.5 30.3049 2.45417 32.2591 4.875 32.2591H16.5417C18.9625 32.2591 20.9167 30.3049 20.9167 27.8841V4.55078C20.9167 2.12995 18.9625 0.175781 16.5417 0.175781ZM13.625 29.3424H7.79167V27.8841H13.625V29.3424ZM18.3646 24.9674H3.05208V4.55078H18.3646V24.9674Z')
+                p 0765932203
+              .contact-info__item
+                svg(viewbox='0 0 27 22' xmlns='http://www.w3.org/2000/svg')
+                  path(d='M25.3125 0.904785H0.9375C0.418945 0.904785 0 1.32373 0 1.84229V20.5923C0 21.1108 0.418945 21.5298 0.9375 21.5298H25.3125C25.8311 21.5298 26.25 21.1108 26.25 20.5923V1.84229C26.25 1.32373 25.8311 0.904785 25.3125 0.904785ZM24.1406 4.15088V19.4204H2.10938V4.15088L1.30078 3.521L2.45215 2.0415L3.70605 3.01709H22.5469L23.8008 2.0415L24.9521 3.521L24.1406 4.15088ZM22.5469 3.01416L13.125 10.3384L3.70312 3.01416L2.44922 2.03857L1.29785 3.51807L2.10645 4.14795L12.1143 11.9292C12.4021 12.1528 12.7561 12.2742 13.1206 12.2742C13.4851 12.2742 13.8391 12.1528 14.127 11.9292L24.1406 4.15088L24.9492 3.521L23.7979 2.0415L22.5469 3.01416Z')
+                p khanhkun292@gmail.com
+            .contact-info__map
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d567.6478053125898!2d108.2580308364505!3d15.925037567093284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142101fdf5f5acf%3A0xc1c153ee23020ae0!2zVsaw4budbiBNYWkgQmEgTMOgbw!5e1!3m2!1svi!2s!4v1641441128244!5m2!1svi!2s" allowfullscreen="" loading="lazy"></iframe>
+            +navSocial("contact-info__social")
+    footer 
+      .footer
+        +footerList(
+          "Pages",
+          "Home",
+          "Product",
+          "Pricing",
+          "About",
+          "Contact")
+        +footerList(
+          "Tomothy",
+          "Eleanor Edwards",
+          "Ted Robertson",
+          "Annette Russell",
+          "Jennie Mckinney",
+          "Gloria Richards")
+        +footerList(
+          "Jane Black",
+          "Philip Jones",
+          "Product",
+          "Colleen Russell",
+          "Marvin Hawkins",
+          "Bruce Simmmons")
+      .footer-info
+        .footer-info__up 
+          svg(viewbox='0 0 26 33' xmlns='http://www.w3.org/2000/svg')
+                  path(d='M13.5013 19.884C16.9941 19.884 19.8346 17.0435 19.8346 13.5506C19.8346 10.0578 16.9941 7.21729 13.5013 7.21729C10.0085 7.21729 7.16797 10.0578 7.16797 13.5506C7.16797 17.0435 10.0085 19.884 13.5013 19.884ZM13.5013 10.384C15.2477 10.384 16.668 11.8042 16.668 13.5506C16.668 15.297 15.2477 16.7173 13.5013 16.7173C11.7549 16.7173 10.3346 15.297 10.3346 13.5506C10.3346 11.8042 11.7549 10.384 13.5013 10.384Z')
+                  path(d='M12.2485 32.256C12.5164 32.4473 12.8375 32.5502 13.1668 32.5502C13.4961 32.5502 13.8172 32.4473 14.0851 32.256C14.5665 31.9155 25.8794 23.7471 25.8335 13.5505C25.8335 6.56637 20.1509 0.883789 13.1668 0.883789C6.18272 0.883789 0.500139 6.56637 0.500139 13.5425C0.454223 23.7471 11.7671 31.9155 12.2485 32.256ZM13.1668 4.05046C18.4061 4.05046 22.6668 8.31121 22.6668 13.5584C22.7001 20.5852 15.7191 26.8948 13.1668 28.9642C10.6161 26.8932 3.63356 20.582 3.66681 13.5505C3.66681 8.31121 7.92756 4.05046 13.1668 4.05046Z')
+          p 2A, Dien Nam Bac, Dien Ban, Quang Nam
+        .footer-info__up 
+          svg(viewbox='0 0 21 33' xmlns='http://www.w3.org/2000/svg')
+                  path(d='M16.5417 0.175781H4.875C2.45417 0.175781 0.5 2.12995 0.5 4.55078V27.8841C0.5 30.3049 2.45417 32.2591 4.875 32.2591H16.5417C18.9625 32.2591 20.9167 30.3049 20.9167 27.8841V4.55078C20.9167 2.12995 18.9625 0.175781 16.5417 0.175781ZM13.625 29.3424H7.79167V27.8841H13.625V29.3424ZM18.3646 24.9674H3.05208V4.55078H18.3646V24.9674Z')
+          p 0765932203
+        .footer-info__down
+          +navSocial
